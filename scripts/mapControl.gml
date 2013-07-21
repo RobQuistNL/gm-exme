@@ -1,2 +1,2 @@
 /// Just a simple setter
-global.control[argument0] = argument1;
+global.__CONTROL[argument0] = argument1;

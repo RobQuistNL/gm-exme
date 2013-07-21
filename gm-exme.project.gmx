@@ -24,7 +24,8 @@
     </scripts>
     <scripts name="controls">
       <script>scripts\mapControl.gml</script>
-      <script>scripts\getControl.gml</script>
+      <script>scripts\getMappedControl.gml</script>
+      <script>scripts\controlActive.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -42,7 +43,8 @@
     <room>rooms\rm_init</room>
     <room>rooms\rm_game</room>
   </rooms>
-  <constants number="4">
+  <constants number="5">
+    <constant name="PLAYER_SPEED">3</constant>
     <constant name="C_LEFT">3</constant>
     <constant name="C_UP">2</constant>
     <constant name="C_RIGHT">1</constant>

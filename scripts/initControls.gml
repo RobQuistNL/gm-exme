@@ -1,6 +1,9 @@
 /// Initialize the controls. Map keyboard buttons to control constants.
-mapControl(C_LEFT, vk_left);
-mapControl(C_UP, vk_up);
-mapControl(C_DOWN, vk_down);
-mapControl(C_RIGHT, vk_right);
+
+global.__CONTROL = -1;
+
+mapControl(C_LEFT,  ord('A'));
+mapControl(C_UP,    ord('W'));
+mapControl(C_DOWN,  ord('S'));
+mapControl(C_RIGHT, ord('D'));
 
