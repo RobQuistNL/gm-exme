@@ -13,8 +13,20 @@
       </sprites>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bak_loading</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\initGame.gml</script>
+    <scripts name="init">
+      <script>scripts\initControls.gml</script>
+    </scripts>
+    <scripts name="controls">
+      <script>scripts\mapControl.gml</script>
+      <script>scripts\getControl.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <objects name="controllers">
       <object>objects\controller_client</object>
@@ -27,8 +39,15 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_init</room>
     <room>rooms\rm_game</room>
   </rooms>
+  <constants number="4">
+    <constant name="C_LEFT">3</constant>
+    <constant name="C_UP">2</constant>
+    <constant name="C_RIGHT">1</constant>
+    <constant name="C_DOWN">0</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
